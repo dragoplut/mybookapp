@@ -245,15 +245,16 @@
 }
 .left-block-fa-clock{
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 22px;
     margin-top: 8px;
 }
 .left-block-fa-plus{
     margin-right: 13px;
 }
 .left-block-history{
+    display: inline-block;
     padding: 0;
-    margin-left: 50px;
+    margin-left: 8px;
     width: 135px;
 }
 .left-block-menu{
@@ -319,6 +320,7 @@
     text-decoration: none;
 }
 .left-block-ul-btn{
+    display: inline-block;
     margin: 0;
     padding: 0;
     width: 200px;
