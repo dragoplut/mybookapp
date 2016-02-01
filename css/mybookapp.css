@@ -57,9 +57,9 @@
 }
 .div-dot-6{
     border-radius: 50%;
-    display: inline-block;
-    margin: 17px 27px;
-    margin-right: 5px;
+    display: block;
+    float: left;
+    margin: 17px 5px 0 27px;
     width: 6px;
     height: 6px;
 }
@@ -244,9 +244,10 @@
     top: 590px;
 }
 .left-block-fa-clock{
-    display: inline-block;
+    display: block;
+    float: left;
     margin-left: 22px;
-    margin-top: 8px;
+    margin-top: 14px;
 }
 .left-block-fa-plus{
     margin-right: 13px;
@@ -281,7 +282,8 @@
 }
 .left-block-ul{
     color: #78829d;
-    display: inline-block;
+    display: block;
+    float: left;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 13px;
     padding: 0;
@@ -309,7 +311,7 @@
 }
 .left-block-li.li-a2{
     margin-left: 10px;
-    margin-top: 0;
+    margin-top: 10px;
 }
 .left-block-li.li-a3{
     margin-left: 0;
@@ -320,7 +322,7 @@
     text-decoration: none;
 }
 .left-block-ul-btn{
-    display: inline-block;
+    display: block;
     margin: 0;
     padding: 0;
     width: 200px;
