@@ -23,18 +23,15 @@
                 <a href="#"> Our Suppurt</a>
             </div>
         </div>
-        <div class="header-block-right">
-            <div class="header-user-avatar">
-                <img src="img/avatar-01.png">
-            </div>
-            <div class="header-user-name">
-                <ul class="header-user-ul">
-                    <li>John Doe</li>
-                </ul>
-            </div>
-            <div class="header-user-chevron-down">
-                <i class="fa fa-chevron-circle-down"></i>
-            </div>
+        <div class="btn-group dropdown header-block-right">
+            <a class="btn header-user-btn" href="#"><img class="header-user-avatar" src="img/avatar-01.png">John Doe</a>
+            <a class="btn dropdown-toggle" type="button" data-toggle="dropdown" href="#"><span class="fa fa-chevron-circle-down user-chevron-down"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-pencil fa-fw"></i>Edit profile</a></li>
+                <li><a href="#"><i class="fa fa-trash-o fa-fw"></i>Delete</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>Log out</a></li>
+            </ul>
         </div>
     </div>
 
