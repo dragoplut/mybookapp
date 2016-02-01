@@ -1,61 +1,46 @@
 .book-list{
-    left: 20px;
-    top: 30px;
-    position: absolute;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 30px;
     width: 200px;
     height: 350px;
 }
 .book-list.item-1{
-    left: 20px;
 }
 .book-list.item-2{
-    left: 240px;
 }
 .book-list.item-3{
-    left: 460px;
 }
 .book-list.item-4{
-    left: 680px;
 }
 .book-list.item-5{
-    left: 900px;
 }
 .book-list.item-6{
-    left: 20px;
-    top: 405px;
 }
 .book-list.item-7{
-    left: 240px;
-    top: 405px;
 }
 .book-list.item-8{
-    left: 460px;
-    top: 405px;
 }
 .book-list.item-9{
-    left: 680px;
-    top: 405px;
 }
 .book-list.item-10{
-    left: 900px;
-    top: 405px;
 }
 .book-list-title{
+    display: block;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: #444c63;
-    margin-top: 15px;
-    position: absolute;
+    margin-top: 8px;
     top: 270px;
 }
 .book-list-author{
+    display: block;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;
     font-weight: 400;
     color: #6f7d95;
-    margin-top: 10px;
-    position: absolute;
+    margin-top: 2px;
     top: 298px;
 }
 .btn-add-a-book{
@@ -116,22 +101,20 @@
 }
 .header-dot{
     border-radius: 50%;
-    position: absolute;
-    top: 18px;
+    display: inline-block;
+    margin: 18px 3px 0 0;
     width: 10px;
     height: 10px;
 }
 .header-dot.dot-close{
     background-color: #e76847;
-    left: 20px;
+    margin-left: 15px;
 }
 .header-dot.dot-extend{
     background-color: #fabf00;
-    left: 34px;
 }
 .header-dot.dot-hide{
     background-color: #52bea6;
-    left: 48px;
 }
 .header-dot-join{
     border-radius: 50%;
@@ -384,10 +367,9 @@
     height: 50px;
 }
 .star-orange{
+    display: block;
     color: #ffab00;
-    margin-top: 12px;
-    position: absolute;
-    top: 315px;
+    margin-top: 5px;
 }
 .table-footer{
     border-bottom-left-radius: 5px;
