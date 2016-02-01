@@ -75,20 +75,26 @@
 .div-dot-6.dot-blue{
     background-color: #7874cf;
 }
+.footer-btn-block{
+    display: inline-block;
+    float: right;
+}
 .footer-settings{
     background-color: #15a4fa;
+    border-top-right-radius: 0;
     border-bottom-right-radius: 5px;
-    left: 1265px;
+    display: inline-block;
+    float: right;
     top: 0;
-    position: absolute;
     width: 55px;
     height: 45px;
 }
 .footer-help{
     background-color: #1f2637;
-    left: 1210px;
+    border-radius: 0;
+    display: inline-block;
+    float: right;
     top: 0;
-    position: absolute;
     width: 55px;
     height: 45px;
 }
