@@ -218,6 +218,9 @@
     left: 1070px;
     top: 16px;
 }
+.input-search-fa-icon:hover{
+    cursor: pointer;
+}
 .left-block{
     background-color: #c0a16b;
     left: 0;

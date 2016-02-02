@@ -8,6 +8,7 @@ var books = [
         author: 'Geeta Devi',
         rating: 5,
         price: 100,
+        date: 2015,
         cover: 'img/book-cover.png'
     },
     {
@@ -16,6 +17,7 @@ var books = [
         author: 'Sanjeev Kapoor',
         rating: 5,
         price: 80,
+        date: 2012,
         cover: 'img/book-cover%20(1).png'
     },
     {
@@ -24,6 +26,7 @@ var books = [
         author: 'Jamie Oliver',
         rating: 4,
         price: 0,
+        date: 2014,
         cover: 'img/book-cover%20(2).png'
     },
     {
@@ -32,6 +35,7 @@ var books = [
         author: 'Simon Holst',
         rating: 4,
         price: 0,
+        date: 2010,
         cover: 'img/book-cover%20(3).png'
     },
     {
@@ -40,6 +44,7 @@ var books = [
         author: 'Chrissy Gower',
         rating: 4,
         price: 50,
+        date: 2014,
         cover: 'img/book-cover%20(4).png'
     },
     {
@@ -48,6 +53,7 @@ var books = [
         author: 'Tobie Puttock',
         rating: 4,
         price: 0,
+        date: 2013,
         cover: 'img/book-cover%20(5).png'
     },
     {
@@ -56,6 +62,7 @@ var books = [
         author: 'Geeta Devi',
         rating: 5,
         price: 75,
+        date: 2007,
         cover: 'img/book-cover%20(6).png'
     },
     {
@@ -64,6 +71,7 @@ var books = [
         author: 'Jamie Oliver',
         rating: 4,
         price: 0,
+        date: 2008,
         cover: 'img/book-cover%20(7).png'
     },
     {
@@ -72,6 +80,7 @@ var books = [
         author: 'Jamie Oliver',
         rating: 5,
         price: 40,
+        date: 2011,
         cover: 'img/book-cover%20(8).png'
     },
     {
@@ -80,6 +89,7 @@ var books = [
         author: 'Matthew Biggs',
         rating: 3,
         price: 120,
+        date: 2010,
         cover: 'img/book-cover%20(9).png'
     },
 ];
