@@ -22,7 +22,7 @@ var books = [
         ID: 3,
         title: 'Jamie\'s Kitchen',
         author: 'Jamie Oliver',
-        rating: 4.5,
+        rating: 4,
         price: 0,
         cover: 'img/book-cover%20(2).png'
     },
@@ -38,7 +38,7 @@ var books = [
         ID: 5,
         title: 'Paleo Slow Cooking',
         author: 'Chrissy Gower',
-        rating: 4.5,
+        rating: 4,
         price: 50,
         cover: 'img/book-cover%20(4).png'
     },
@@ -78,7 +78,7 @@ var books = [
         ID: 10,
         title: 'Vegetables Cookbook',
         author: 'Matthew Biggs',
-        rating: 3.5,
+        rating: 3,
         price: 120,
         cover: 'img/book-cover%20(9).png'
     },
