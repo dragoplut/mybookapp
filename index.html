@@ -103,8 +103,12 @@
                     <img src="{{cover}}">
                     <a class="book-list-title" href="#">{{title}}</a>
                     <a class="book-list-author" href="#">by {{author}}</a>
-                    {{{starLoop rating}}}
-                    </div>
+                    <span class="star-orange">
+                    {{#loop rating}}
+                        <i class="fa fa-star"></i>
+                    {{/loop}}
+                    </span>
+                </div>
                 {{/each}}
             </script>
         </div>

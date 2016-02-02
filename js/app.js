@@ -10,13 +10,13 @@ $(function(){
     $('.main-book-list').append(html);
 });
 
-Handlebars.registerHelper('starLoop', function(rating){
-    var out = '<span class="star-orange">';
-    var newRating = parseInt(rating);
-    while (newRating--){
-        out += '<i class="fa fa-star"></i>';
+Handlebars.registerHelper('loop', function(count, options){
+    var out = '';
+    console.info(options, count);
+    while (count--){
+        out += options.fn();
     }
-    return out + '</span>';
+    return out;
 });
 
 
