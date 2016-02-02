@@ -96,7 +96,18 @@
             </div>
         </div>
 
-        <div class="main-book-list"></div>
+        <div class="main-book-list">
+            <script id="books-template" type="text/x-handlebars-template">
+                {{#each .}}
+                <div id="{{ID}}" class="book-list">
+                    <img src="{{cover}}">
+                    <a class="book-list-title" href="#">{{title}}</a>
+                    <a class="book-list-author" href="#">by {{author}}</a>
+                    {{{starLoop rating}}}
+                    </div>
+                {{/each}}
+            </script>
+        </div>
 
     </div>
 

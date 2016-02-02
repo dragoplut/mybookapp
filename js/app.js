@@ -4,16 +4,19 @@
 'use strict';
 
 $(function(){
-    var source = '{{#each .}}' +
-        '<div id="{{ID}}" class="book-list">' +
-        '<img src="{{cover}}">' +
-        '<a class="book-list-title" href="#">{{title}}</a>' +
-        '<a class="book-list-author" href="#">by {{author}}</a>' +
-        '</div>' +
-    '{{/each}}';
+    var source = $('#books-template').html();
     var template = Handlebars.compile(source);
     var html = template(books);
     $('.main-book-list').append(html);
+});
+
+Handlebars.registerHelper('starLoop', function(rating){
+    var out = '<span class="star-orange">';
+    var newRating = parseInt(rating);
+    while (newRating--){
+        out += '<i class="fa fa-star"></i>';
+    }
+    return out + '</span>';
 });
 
 
