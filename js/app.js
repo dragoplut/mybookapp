@@ -34,7 +34,7 @@ var BooksModule = (function(get){
 
     function searchNew (item){
         var result = [];
-        if (item != 0){
+        if (item !== 0){
             item = item.toLowerCase();
         }
         for (var i = 0; i < books.length; i++){
