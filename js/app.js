@@ -26,7 +26,6 @@ var BooksModule = (function(get){
     }());
 
     function renderBooks(books){
-        console.info('renderBooks');
         var template = Handlebars.compile(source);
         var html = template(books);
         $('.main-book-list').html(html);
@@ -49,7 +48,6 @@ var BooksModule = (function(get){
 
     function sortBy (option){
         var sorted = $.extend([], books);
-        console.info(sorted);
         if (option == 'rating'){
             sorted.sort(function (a, b) {
                 var a1 = a.rating;

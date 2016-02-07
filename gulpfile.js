@@ -2,30 +2,25 @@
  * Created by oleksandr on 05.02.16.
  */
 var gulp = require('gulp');
-var browserify = require('gulp-browserify');
+
+var jshint = require('gulp-jshint');
+var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
-var refresh = require('gulp-livereload');
-var lr = require('tiny-lr');
-var server = lr();
 
 gulp.task('scripts', function() {
-    gulp.src(['src/**/*.js'])
-        .pipe(browserify())
+    return gulp.src(['js/**/*.js'])
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'))
         .pipe(concat('dest.js'))
+        .pipe(uglify())
         .pipe(gulp.dest('build'))
-        .pipe(refresh(server))
 });
 
-gulp.task('lr-server', function() {
-    server.listen(35729, function(err) {
-        if(err) return console.log(err);
-    });
-});
+// default task - run by gulp
+gulp.task('default', ['scripts'], function() {
 
-gulp.task('default', function() {
-    gulp.run('lr-server', 'scripts');
-
-    gulp.watch('src/**', function(event) {
+    // watch all files in directory js, and if some file was changed will call task scripts
+    gulp.watch('js/**', function(event) {
         gulp.run('scripts');
     });
 });
