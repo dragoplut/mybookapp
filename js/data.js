@@ -94,5 +94,24 @@ var DataModule = (function(){
             cover: 'img/book-cover%20(9).png'
         }
     ];
-    return {get: books};
+
+    function getBooks(){
+        return books;
+    }
+    function setBooks(data){
+        for (var i = 0; i < data.length; i++){
+            if (data[i].ID !== parseInt(data[i].ID || !data[i].title)){
+                console.info('Error. Can\'t save changes to books.');
+                return;
+            }
+        }
+        // Turned off till setBooks usage.
+        //books = data;
+        //console.info('Changed books set success!');
+    }
+
+    return {
+        getBooks: getBooks,
+        setBooks: setBooks
+    };
 }());
