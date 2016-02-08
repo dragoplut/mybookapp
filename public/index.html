@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="vendor/css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>MyBookApp</title>
+</head>
+<body>
+
+    <div class="header-block">
+        <div class="header-block-left">
+            <div class="header-dot dot-close"></div>
+            <div class="header-dot dot-extend"></div>
+            <div class="header-dot dot-hide"></div>
+            <div class="header-title-link">
+                <a href="#"><i class="fa fa-book"></i> MyBookApp</a>
+            </div>
+            <div class="header-help-support">
+                <a href="#">Help Center </a>
+                <div class="header-dot-join"></div>
+                <a href="#"> Our Suppurt</a>
+            </div>
+        </div>
+        <div class="btn-group dropdown header-block-right">
+            <a class="btn header-user-btn" href="#"><img class="header-user-avatar" src="img/avatar-01.png">John Doe</a>
+            <a class="btn dropdown-toggle" type="button" data-toggle="dropdown" href="#"><span class="fa fa-chevron-circle-down user-chevron-down"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-pencil fa-fw"></i> Edit profile</a></li>
+                <li><a href="#"><i class="fa fa-trash-o fa-fw"></i> Delete</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Log out</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="left-block">
+        <div class="left-block-menu menu-top">
+            <button type="button" class="btn btn-add-a-book"><i class="fa fa-plus left-block-fa-plus"></i> ADD A BOOK</button>
+        </div>
+        <div class="left-block-brake line-1"></div>
+        <div class="left-block-menu menu-1">
+            <ul class="left-block-ul ul-1">
+                <li><div class="left-block-ul-btn"><a class="left-block-li li-a1" href="#"><i class="fa fa-book fa-fw left-block-fa-plus"></i>Now Reading</a></div></li>
+                <li><div class="left-block-ul-btn"><a class="left-block-li li-a1" href="#"><i class="fa fa-globe fa-fw left-block-fa-plus"></i>Browse</a></div></li>
+                <li><div class="left-block-ul-btn"><a class="left-block-li li-a1" href="#"><i class="fa fa-shopping-cart fa-fw left-block-fa-plus"></i>By Books</a></div></li>
+                <li><div class="left-block-ul-btn"><a class="left-block-li li-a1" href="#"><i class="fa fa-star fa-fw left-block-fa-plus"></i>Favourite Books</a></div></li>
+                <li><div class="left-block-ul-btn"><a class="left-block-li li-a1" href="#"><i class="fa fa-list fa-fw left-block-fa-plus"></i>Wishlist</a></div></li>
+                <li><div class="left-block-ul-btn"><a class="left-block-li li-a1" href="#"><i class="fa fa-clock-o fa-fw left-block-fa-plus"></i>History</a></div></li>
+            </ul>
+        </div>
+        <div class="left-block-brake line-2"></div>
+        <div class="left-block-menu menu-2">
+            <ul class="left-block-ul ul-2">
+                <li><div class="left-block-ul-btn"><div class="div-dot-6 dot-red"></div><a class="left-block-li li-a2" href="#">Must Read Titles</a></div></li>
+                <li><div class="left-block-ul-btn"><div class="div-dot-6 dot-yellow"><a class="left-block-li li-a2" href="#"></div>Best Of List</a></div></li>
+                <li><div class="left-block-ul-btn"><div class="div-dot-6 dot-pink"></div><a class="left-block-li li-a2" href="#">Classic Novels</a></div></li>
+                <li><div class="left-block-ul-btn"><div class="div-dot-6 dot-blue"></div><a class="left-block-li li-a2" href="#">Non Fiction</a></div></li>
+            </ul>
+        </div>
+        <div class="left-block-brake line-3"></div>
+        <div class="left-block-menu menu-3">
+            <ul class="left-block-ul ul-3">
+                <li>
+                    <i class="fa fa-clock-o fa-fw left-block-fa-clock"></i>
+                    <div class="left-block-history">
+                        <p class="left-block-li li-a3">You added <a href="#">Fight Club</a> by <a href="#">Chuck Palahniuk</a> to your <a href="#">Must Read Titles</a>. 24 minutes ago</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fa fa-clock-o fa-fw left-block-fa-clock"></i>
+                    <div class="left-block-history">
+                        <p class="left-block-li li-a3">You added <a href="#">The Trial</a> by <a href="#">Franz Kafka</a> to your <a href="#">Must Read Titles</a>. 48 minutes ago</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-table">
+        <div class="main-table table-title">
+            <p class="table-title-p">Browse Available Books</p>
+        </div>
+        <div class="main-table table-menu-bar">
+            <ul class="list-inline">
+                <li class="list-inline-menu-bar"><div class="table-menu-btn-round btn-all-bo"><a class="list-inline-menu-a" href="#" onclick="BooksModule.sortBy('all-bo')">All Books</a></div></li>
+                <li class="list-inline-menu-bar"><div class="table-menu-btn-round btn-most-re"><a class="list-inline-menu-a" href="#" onclick="BooksModule.sortBy('date')">Most Recent</a></div></li>
+                <li class="list-inline-menu-bar"><div class="table-menu-btn-round btn-most-po"><a class="list-inline-menu-a" href="#" onclick="BooksModule.sortBy('rating')">Most Popular</a></div></li>
+                <li class="list-inline-menu-bar"><div class="table-menu-btn-round btn-free-bo"><a class="list-inline-menu-a" href="#" onclick="BooksModule.searchNew(0)">Free Books</a></div></li>
+            </ul>
+            <div>
+                <input class="input-search-books" type="search" onkeyup="BooksModule.searchNew(this.value)" placeholder="Enter Keywords">
+                <i class="fa fa-search fa-fw input-search-fa-icon" onclick="BooksModule.searchNew($('.input-search-books').val())"></i>
+            </div>
+        </div>
+
+        <div class="main-book-list">
+            <script id="books-template" type="text/x-handlebars-template">
+                {{#each .}}
+                <div id="{{ID}}" class="book-list">
+                    <img src="{{cover}}">
+                    <a class="book-list-title" href="#">{{title}}</a>
+                    <a class="book-list-author" href="#">by {{author}}</a>
+                    <span class="star-orange">
+                    {{#loop rating}}
+                        <i class="fa fa-star"></i>
+                    {{/loop}}
+                    </span>
+                </div>
+                {{/each}}
+            </script>
+        </div>
+
+    </div>
+
+    <div class="table-footer">
+        <div class="btn-group footer-btn-block">
+            <a class="btn footer-help-btn" type="button"><i class="fa fa-question-circle fa-lg icon-center-big"></i></a>
+            <a class="btn footer-settings-btn" type="button"><i class="fa fa-cog fa-lg icon-center-big"></i></a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="vendor/js/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/js/handlebars.min-latest.js"></script>
+    <script type="text/javascript" src="js/dest.js"></script>
+
+</body>
+</html>
