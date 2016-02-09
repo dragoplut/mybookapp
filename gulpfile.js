@@ -38,6 +38,13 @@ gulp.task('public', function(){
         .pipe(gulp.dest('public'))
 });
 
+gulp.task('duplicate', function(){
+    return gulp.src(['public/**'])
+        .pipe(newer('html'))
+        .pipe(debug({title:'publicToHtml:copy'}))
+        .pipe(gulp.dest('/var/www/html'))
+});
+
 gulp.task('watch', function(){
     gulp.watch('frontend/js/**/*.js', ['scripts']);
     gulp.watch('frontend/sass/**/*.*', ['styles']);

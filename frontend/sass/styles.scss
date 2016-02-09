@@ -1,5 +1,28 @@
 $fontMainColour: #78829d;
 $fontMainFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@media screen and (max-width: 768px){
+  .main-table{
+    left: 0;
+    top: 90px;
+    position: absolute;
+    max-width: 768px;
+    width: 100%;
+  }
+  .left-block{
+    background-color: #1f2637;
+    left: 0;
+    top: 45px;
+    max-width: 768px;
+    width: 100%;
+    height: 45px;
+  }
+
+}
+body{
+  max-width: 1320px;
+  height: 100%;
+  width: 100%;
+}
 .book-list{
   display: inline-block;
   margin-left: 20px;
@@ -85,8 +108,8 @@ $fontMainFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: inline-block;
   margin: 0;
   padding: 0;
-  width: 1320px;
-  height: 45px;
+  width: 100%;
+  height: auto;
 }
 .header-dot{
   border-radius: 50%;
@@ -118,7 +141,7 @@ $fontMainFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #2f364a;
   float: left;
   margin: 0;
-  width: 1162px;
+  width: 88%;
   height: 45px;
 }
 .header-block-right {
@@ -126,28 +149,28 @@ $fontMainFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #15a4fa;
   color: #ffffff;
   float: right;
-  width: 158px;
+  width: 12%;
   height: 45px;
 }
 @mixin header-links-style{
   display: inline-block;
   font-family: $fontMainFamily;
   color: $fontMainColour;
-  position: absolute;
+  position: relative;
 }
 
 .header-title-link{
   @include header-links-style;
+  float: none;
   font-size: 12px;
-  left: 612px;
-  top: 16px;
+  margin: 13px 2% 0 45%;
   width: 90px;
 }
 .header-help-support{
   @include header-links-style;
+  float: right;
   font-size: 13px;
-  left: 975px;
-  top: 15px;
+  margin: 14px 2% 0 0;
   width: 170px;
 }
 .header-user-avatar{
@@ -186,18 +209,22 @@ $fontMainFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-style: solid;
   border-color: #c7cddb;
   border-radius: 16px;
-  position: absolute;
-  left: 700px;
-  top: 8px;
+  top: 7px;
   padding-left: 18px;
   padding-right: 28px;
+  position: absolute;
   width: 400px;
   height: 32px;
 }
+.input-search-div{
+  margin: 0 415px 0 0;
+  position: relative;
+  float: right;
+}
 .input-search-fa-icon{
+  left: 373px;
+  top: 15px;
   position: absolute;
-  left: 1070px;
-  top: 16px;
 }
 .input-search-fa-icon:hover{
   cursor: pointer;
@@ -329,7 +356,7 @@ $fontMainFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: block;
   margin-left: 0;
   margin-top: 120px;
-  width: 1120px;
+  width: 100%;
   height: 780px;
 }
 .main-table{
@@ -337,7 +364,8 @@ $fontMainFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
   left: 200px;
   top: 45px;
   position: absolute;
-  width: 1120px;
+  max-width: 1120px;
+  width: 84.84848485%;
   height: 900px;
 }
 .main-table.table-title{
@@ -348,14 +376,17 @@ $fontMainFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
   left: 0;
   top: 0;
   height: 70px;
+  width: 100%;
 }
 .main-table.table-menu-bar{
   border-bottom: 1px solid #dadfea;
   border-top: 1px solid #f4f6fa;
+  display: inline-block;
   color: #8c97b2;
   left: 0;
   top: 70px;
   height: 50px;
+  width: 100%;
 }
 .star-orange{
   display: block;
@@ -367,9 +398,9 @@ $fontMainFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-bottom-right-radius: 5px;
   background-color: #181e2c;
   left: 0;
-  top: 945px;
-  position: absolute;
-  width: 1320px;
+  position: relative;
+  max-width: 1320px;
+  width: 100%;
   height: 45px;
 }
 .table-menu-btn-round{
@@ -406,4 +437,10 @@ $fontMainFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
   left: 23px;
   top: 22px;
   position: absolute;
+}
+.table-top-menu{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 450px;
 }

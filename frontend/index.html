@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="vendor/css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>MyBookApp</title>
@@ -82,13 +83,13 @@
             <p class="table-title-p">Browse Available Books</p>
         </div>
         <div class="main-table table-menu-bar">
-            <ul class="list-inline">
+            <ul class="list-inline table-top-menu">
                 <li class="list-inline-menu-bar"><div class="table-menu-btn-round btn-all-bo"><a class="list-inline-menu-a" href="#" onclick="BooksModule.sortBy('all-bo')">All Books</a></div></li>
                 <li class="list-inline-menu-bar"><div class="table-menu-btn-round btn-most-re"><a class="list-inline-menu-a" href="#" onclick="BooksModule.sortBy('date')">Most Recent</a></div></li>
                 <li class="list-inline-menu-bar"><div class="table-menu-btn-round btn-most-po"><a class="list-inline-menu-a" href="#" onclick="BooksModule.sortBy('rating')">Most Popular</a></div></li>
                 <li class="list-inline-menu-bar"><div class="table-menu-btn-round btn-free-bo"><a class="list-inline-menu-a" href="#" onclick="BooksModule.searchNew(0)">Free Books</a></div></li>
             </ul>
-            <div>
+            <div class="input-search-div">
                 <input class="input-search-books" type="search" onkeyup="BooksModule.searchNew(this.value)" placeholder="Enter Keywords">
                 <i class="fa fa-search fa-fw input-search-fa-icon" onclick="BooksModule.searchNew($('.input-search-books').val())"></i>
             </div>
