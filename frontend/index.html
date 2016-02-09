@@ -42,12 +42,12 @@
         <div class="left-block-brake line-1"></div>
         <div class="left-block-menu menu-1">
             <ul class="left-block-ul ul-1">
-                <li><div class="left-block-ul-btn"><a class="left-block-li li-a1" href="#"><i class="fa fa-book fa-fw left-block-fa-plus"></i>Now Reading</a></div></li>
-                <li><div class="left-block-ul-btn"><a class="left-block-li li-a1" href="#"><i class="fa fa-globe fa-fw left-block-fa-plus"></i>Browse</a></div></li>
-                <li><div class="left-block-ul-btn"><a class="left-block-li li-a1" href="#"><i class="fa fa-shopping-cart fa-fw left-block-fa-plus"></i>By Books</a></div></li>
-                <li><div class="left-block-ul-btn"><a class="left-block-li li-a1" href="#"><i class="fa fa-star fa-fw left-block-fa-plus"></i>Favourite Books</a></div></li>
-                <li><div class="left-block-ul-btn"><a class="left-block-li li-a1" href="#"><i class="fa fa-list fa-fw left-block-fa-plus"></i>Wishlist</a></div></li>
-                <li><div class="left-block-ul-btn"><a class="left-block-li li-a1" href="#"><i class="fa fa-clock-o fa-fw left-block-fa-plus"></i>History</a></div></li>
+                <li class="li-line"><div class="left-block-ul-btn"><a class="left-block-li li-a1" href="#"><i class="fa fa-book fa-fw left-block-fa-icons"></i>Now Reading</a></div></li>
+                <li class="li-line"><div class="left-block-ul-btn"><a class="left-block-li li-a1" href="#"><i class="fa fa-globe fa-fw left-block-fa-icons"></i>Browse</a></div></li>
+                <li class="li-line"><div class="left-block-ul-btn"><a class="left-block-li li-a1" href="#"><i class="fa fa-shopping-cart fa-fw left-block-fa-icons"></i>By Books</a></div></li>
+                <li class="li-line"><div class="left-block-ul-btn"><a class="left-block-li li-a1" href="#"><i class="fa fa-star fa-fw left-block-fa-icons"></i>Favourite Books</a></div></li>
+                <li class="li-line"><div class="left-block-ul-btn"><a class="left-block-li li-a1" href="#"><i class="fa fa-list fa-fw left-block-fa-icons"></i>Wishlist</a></div></li>
+                <li class="li-line"><div class="left-block-ul-btn"><a class="left-block-li li-a1" href="#"><i class="fa fa-clock-o fa-fw left-block-fa-icons"></i>History</a></div></li>
             </ul>
         </div>
         <div class="left-block-brake line-2"></div>
@@ -99,7 +99,7 @@
             <script id="books-template" type="text/x-handlebars-template">
                 {{#each .}}
                 <div id="{{ID}}" class="book-list">
-                    <img src="{{cover}}">
+                    <img class="book-list-img" src="{{cover}}">
                     <a class="book-list-title" href="#">{{title}}</a>
                     <a class="book-list-author" href="#">by {{author}}</a>
                     <span class="star-orange">

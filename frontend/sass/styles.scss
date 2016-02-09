@@ -1,27 +1,11 @@
 $fontMainColour: #78829d;
 $fontMainFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
-@media screen and (max-width: 768px){
-  .main-table{
-    left: 0;
-    top: 90px;
-    position: absolute;
-    max-width: 768px;
-    width: 100%;
-  }
-  .left-block{
-    background-color: #1f2637;
-    left: 0;
-    top: 45px;
-    max-width: 768px;
-    width: 100%;
-    height: 45px;
-  }
-
-}
 body{
+  display: inline-block;
   max-width: 1320px;
-  height: 100%;
-  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: auto;
 }
 .book-list{
   display: inline-block;
@@ -29,6 +13,8 @@ body{
   margin-top: 30px;
   width: 200px;
   height: 350px;
+}
+.book-list-img{
 }
 .book-list-title{
   display: block;
@@ -108,8 +94,8 @@ body{
   display: inline-block;
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: auto;
+  width: 1320px;
+  height: 45px;
 }
 .header-dot{
   border-radius: 50%;
@@ -141,7 +127,7 @@ body{
   background-color: #2f364a;
   float: left;
   margin: 0;
-  width: 88%;
+  width: 1162px;
   height: 45px;
 }
 .header-block-right {
@@ -149,28 +135,28 @@ body{
   background-color: #15a4fa;
   color: #ffffff;
   float: right;
-  width: 12%;
+  width: 158px;
   height: 45px;
 }
 @mixin header-links-style{
   display: inline-block;
   font-family: $fontMainFamily;
   color: $fontMainColour;
-  position: relative;
+  position: absolute;
 }
 
 .header-title-link{
   @include header-links-style;
-  float: none;
   font-size: 12px;
-  margin: 13px 2% 0 45%;
+  left: 612px;
+  top: 16px;
   width: 90px;
 }
 .header-help-support{
   @include header-links-style;
-  float: right;
   font-size: 13px;
-  margin: 14px 2% 0 0;
+  left: 975px;
+  top: 15px;
   width: 170px;
 }
 .header-user-avatar{
@@ -209,7 +195,8 @@ body{
   border-style: solid;
   border-color: #c7cddb;
   border-radius: 16px;
-  top: 7px;
+  left: 700px;
+  top: 8px;
   padding-left: 18px;
   padding-right: 28px;
   position: absolute;
@@ -217,19 +204,17 @@ body{
   height: 32px;
 }
 .input-search-div{
-  margin: 0 415px 0 0;
-  position: relative;
-  float: right;
 }
 .input-search-fa-icon{
-  left: 373px;
-  top: 15px;
+  left: 1070px;
+  top: 16px;
   position: absolute;
 }
 .input-search-fa-icon:hover{
   cursor: pointer;
 }
 .left-block{
+  display: inline-block;
   left: 0;
   top: 45px;
   width: 200px;
@@ -258,6 +243,9 @@ body{
   float: left;
   margin-left: 22px;
   margin-top: 14px;
+}
+.left-block-fa-icons{
+  margin-right: 13px;
 }
 .left-block-fa-plus{
   margin-right: 13px;
@@ -288,7 +276,7 @@ body{
 }
 .left-block-menu.menu-3{
   top: 595px;
-  height: 355px;
+  height: 360px;
 }
 .left-block-ul{
   color: $fontMainColour;
@@ -356,17 +344,17 @@ body{
   display: block;
   margin-left: 0;
   margin-top: 120px;
-  width: 100%;
-  height: 780px;
+  width: 1120px;
+  height: auto;
 }
 .main-table{
   background-color: #eef1f7;
+  display: inline-block;
   left: 200px;
   top: 45px;
   position: absolute;
-  max-width: 1120px;
-  width: 84.84848485%;
-  height: 900px;
+  width: 1120px;
+  height: auto;
 }
 .main-table.table-title{
   border-bottom: 1px solid #dadfea;
@@ -376,7 +364,6 @@ body{
   left: 0;
   top: 0;
   height: 70px;
-  width: 100%;
 }
 .main-table.table-menu-bar{
   border-bottom: 1px solid #dadfea;
@@ -386,7 +373,6 @@ body{
   left: 0;
   top: 70px;
   height: 50px;
-  width: 100%;
 }
 .star-orange{
   display: block;
@@ -394,13 +380,12 @@ body{
   margin-top: 5px;
 }
 .table-footer{
+  display: inline-block;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: #181e2c;
   left: 0;
-  position: relative;
-  max-width: 1320px;
-  width: 100%;
+  width: 1320px;
   height: 45px;
 }
 .table-menu-btn-round{
@@ -443,4 +428,154 @@ body{
   margin: 0;
   padding: 0;
   width: 450px;
+}
+@media screen and (max-width: 768px){
+  .book-list{
+    margin-top: 15px;
+    width: 229.33px;
+    height: 400.75px;
+  }
+  .book-list-img{
+    width: 98%;
+    height: auto;
+  }
+  .book-list-title{
+    font-size: 18px;
+  }
+  .book-list-author{
+    font-size: 16px;
+  }
+  .btn-add-a-book{
+    font-size: 13px;
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 140px;
+    height: 35px;
+  }
+  .div-dot-6{
+    width: 0;
+    height: 0;
+  }
+  .header-block {
+    width: 768px;
+  }
+  .header-block-left {
+    width: 610px;
+  }
+  .header-block-right {
+    width: 158px;
+  }
+  .header-title-link{
+    font-size: 15px;
+    left: 310px;
+    width: 120px;
+  }
+  .header-help-support{
+    font-size: 0px;
+    left: 400px;
+  }
+
+  .input-search-books{
+    left: 498px;
+    width: 250px;
+  }
+  .input-search-fa-icon{
+    left: 718px;
+  }
+  .main-book-list{
+    margin: 0;
+    width: 768px;
+  }
+  .main-table{
+    left: 0;
+    top: 0;
+    position: relative;
+    width: 768px;
+  }
+  .main-table.table-title{
+    font-size: 26px;
+    height: 60px;
+  }
+  .main-table.table-menu-bar{
+    top: 0;
+  }
+  .left-block{
+    background-color: #1f2637;
+    left: 0;
+    top: 45px;
+    width: 768px;
+    height: 60px;
+  }
+  .left-block-brake.line-1{
+    top: 45px;
+    width: 768px;
+  }
+  .left-block-brake.line-2{
+    top: 110px;
+    width: 768px;
+  }
+  .left-block-brake.line-3{
+    top: 0;
+    width: 0;
+  }
+  .left-block-menu.menu-top{
+    top: 50px;
+    height: 60px;
+    width: 170px;
+  }
+  .left-block-menu.menu-1{
+    display: inline;
+    left: 170px;
+    top: 50px;
+    height: 60px;
+    width: 500px;
+  }
+  .left-block-menu.menu-2{
+    top: 130px;
+    height: 0;
+    width: 0;
+  }
+  .left-block-menu.menu-3{
+    top: 130px;
+    height: 0;
+    width: 0;
+  }
+  .left-block-ul.ul-1{
+    display: inline-block;
+    float: left;
+    font-size: 0px;
+  }
+  .left-block-ul-btn{
+    display: inline-block;
+    margin: 5px 0 0 0;
+    padding: 0;
+    width: 75px;
+    height: 50px;
+  }
+  .left-block-li.li-a2{
+    margin: 0;
+    font-size: 0;
+  }
+  .left-block-li.li-a3{
+    margin: 0;
+    font-size: 0;
+  }
+  .left-block-fa-icons{
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  .li-line{
+    display: inline-block;
+  }
+  .table-footer{
+    margin: 5px 0 0 0;
+    position: relative;
+    width: 768px;
+  }
+  .table-title-p{
+    margin: 10px 0 0 200px;
+    top: 0;
+  }
+
 }
